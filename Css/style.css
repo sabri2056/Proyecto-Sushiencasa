@@ -1,5 +1,4 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,14 +8,14 @@
 
 
 
-body{
-font-family: 'Caveat', cursive;
-font-family: 'Edu NSW ACT Foundation', cursive;
-font-family: 'Poppins', sans-serif;
-background-image: url(../IMG/4.avif);
+body {
+  font-family: 'Caveat', cursive;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(../IMG/4.avif);
 
-background-size:cover;
-color: white;
+  background-size: cover;
+  color: white;
 
 
 }
@@ -25,11 +24,12 @@ header {
   display: flex;
   background-color: rgba(0, 0, 0, 0.747);
   bottom: auto;
-  
+
 }
 
-header img{
+header img {
   height: 130px;
+  border-radius: 25px;
 
 }
 
@@ -40,52 +40,53 @@ nav ul {
   font-size: 25px;
   margin: 30px 100px 80px 350px;
   list-style: none;
-  justify-content:cover;
-  position:right; 
+  justify-content: cover;
+  position: right;
 }
 
-a{
+a {
   text-decoration: none;
-  color: crimson; 
+  color: crimson;
 }
-a:hover{
+
+a:hover {
   font-size: 30px;
 }
 
-.pie1 { 
+.pie1 {
   font-size: 20px;
   margin: 0px 200px 100px 700px;
 }
 
 
-h1{
-display: flex;
+h1 {
+  display: flex;
   color: crimson;
   inline-size: auto;
-  flex-direction:row;
+  flex-direction: row;
   margin: 0px 0px 50px 400px;
-} 
+}
 
-.carousel{
+.carousel {
   margin: 0px 0px 0px 0px;
 }
 
 
-footer{
+footer {
 
   margin: 0px 50px 0px 0px;
   color: white;
   display: grid;
   width: 100%;
   grid-template-rows: repeat(1, 1fr);
-  background-color:rgba(238, 39, 39, 0.993);
+  background-color: rgba(238, 39, 39, 0.993);
   justify-content: center;
   position: fixed;
   bottom: 0;
- 
+
 }
 
-.pie-medio{
+.pie-medio {
   display: grid;
   padding: auto;
   justify-content: space-evenly;
@@ -94,12 +95,14 @@ footer{
 
 /* Area Contacto */
 
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 0px; 
-  border: 1px solid #ccc; 
-  border-radius: 0px; 
-  box-sizing: border-box; 
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 10px;
   resize: horizontal;
@@ -115,225 +118,240 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: white;
 }
 
-/* Add a background color and some padding around the form */
+
 .container {
- display:grid;
- width: 50%;
-background-color: #201f1f;
+  display: grid;
+  width: 50%;
+  background-color: #201f1f;
   padding: 20px;
-  }
+}
 
-  /* Area Catering */
-  .ccater{
-    display: grid;
-  }
-  
+/* Area Catering */
+.ccater {
+  display: grid;
+}
 
-  .ccater{
-   display: grid;
-    grid-template-rows:(1,100px);
-    grid-template-columns:repeat(3,400px);
-    margin: 100px 50px 300px 80px;
-    padding: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color:white;
-    background-color: rgba(0, 0, 0, 0.767); 
-    position: cover;
-    /* border: 10px; */
-  }
-h2{
+
+.ccater {
+  display: grid;
+  grid-template-rows: (1, 100px);
+  grid-template-columns: repeat(3, 400px);
+  margin: 100px 50px 300px 80px;
+  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.767);
+  position: cover;
+  border-radius: 25px;
+
+  /* border: 10px; */
+}
+
+h2 {
   display: flex;
   color: crimson;
   inline-size: auto;
-  flex-direction:row;
+  flex-direction: row;
 
 }
-  .cobjetivo{
-    display: grid
-  }
 
-  .cpropuesta{
-    display: grid;
-  }
-
-  .cexperiencia{
-    display: grid;
-  }
-
-  .cbotton{
-    display: grid;
-    grid-template-columns: (1, 100px);
-    width: 300px;
-    font-weight: 700;
-    background-color:rgb(189, 179, 179);
-    border-radius: 150px;
-    padding: 10px 30px;
-    margin: 50px 50px;
-    position: center;
-    text-decoration: none;
-    
-  }
-
-  /* Area Nosotras */
-
-.nnosotr{
+.cobjetivo {
   display: grid;
-   grid-template-rows:(1,100px);
-    grid-template-columns:repeat(3,500px);
-    margin: 80px 50px 50px 80px;
-    padding: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color:white;
-    background-color: rgba(0, 0, 0, 0.295);
-    justify-items: stretch;
- 
+  margin: 50px 50px px 80px;
+  padding: 15px;
+
 }
 
-.nconcepto{
-  display: grid; 
- 
+.cpropuesta {
+  display: grid;
+  margin: 50px 50px px 80px;
+  padding: 15px;
 }
 
-.nmision{
+.cexperiencia {
+  display: grid;
+  margin: 50px 50px px 80px;
+  padding: 15px;
+}
+
+.cbotton {
+  display: grid;
+  grid-template-columns: (1, 100px);
+  width: 300px;
+  font-weight: 700;
+  background-color: rgb(189, 179, 179);
+  border-radius: 150px;
+  padding: 10px;
+  margin: 50px 50px;
+  position: center;
+  text-decoration: none;
+
+}
+
+/* Area Nosotras */
+
+.nnosotr {
+  display: grid;
+  grid-template-rows: (1, 100px);
+  grid-template-columns: repeat(3, 500px);
+  margin: 80px 50px 50px 80px;
+  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.295);
+  justify-items: stretch;
+
+}
+
+.nconcepto {
+  display: grid;
+
+}
+
+.nmision {
   display: grid;
   padding: 15px;
   justify-items: stretch;
-  align-items:center;
+  align-items: center;
 }
 
-.nproducto{
+.nproducto {
   display: grid;
   padding: 15px;
   position: relative;
   justify-items: stretch;
-  align-items:center;
+  align-items: center;
 }
 
-.nhistoria{
+.nhistoria {
   display: grid;
-  grid-template-rows:(1,700px);
-  grid-template-columns:(1,900px);
+  grid-template-rows: (1, 700px);
+  grid-template-columns: (1, 900px);
   margin: 20px 10px 80px 80px;
-  padding:0px;
+  padding: 0px;
   padding-left: 15px;
   padding-right: 15px;
   font-size: 25px;
   font-family: 'Edu NSW ACT Foundation', cursive;
   background-color: rgba(0, 0, 0, 0.295);
-color: snow;
-justify-items: stretch;
-align-items:center;
+  color: snow;
+  justify-items: stretch;
+  align-items: center;
 
 }
 
-.nartesanas{
+.nartesanas {
   display: flex;
   font-family: 'Edu NSW ACT Foundation', cursive;
   color: crimson;
   inline-size: auto;
-  flex-direction:row;
+  flex-direction: row;
 }
 
 /* Area Menu */
 
-.mopcionesg{
+.mopcionesg {
+  height: 250px;
   display: flex;
-  flex-shrink: ;
   align-items: stretch;
-  padding: 100px;
-  flex-direction:row ;
-  table-layout: auto;
+  padding: 150;
+  flex-direction: 1 row;
+
+  /* table-layout: auto; */
   flex-wrap: nowrap;
-  /* justify-content:; */
- 
+  justify-content: center;
+
 }
 
-h3{
- display: flex;
+h3 {
+  display: flex;
   color: crimson;
-  inline-size: auto;
-  flex-direction:row;
-  
+  /* inline-size: auto; */
+  flex-direction: row;
+
 }
 
 
-.list-group-item{
+.list-group-item {
   text-decoration: none;
-  list-style-type:none;
+  list-style-type: none;
+  justify-content: center;
+  padding:0,60px;
+  width: 400px;
+
 }
 
 
-.card-img-top{
+.card-img-top {
   display: flex;
   width: 250px;
-  height: 250px; ;
+  height: 250px;
+  border-radius: 25px;
 }
 
 /* Area Responsive */
 
 @media screen and (max-width: 425px) {
 
- 
 
-  nav ul
-  {
+
+  nav ul {
     /* display:block ; */
     text-align: left;
     float: left;
     flex-direction: row;
-    width: 0,50px;
+    width: 0, 50px;
     margin: none;
     margin: 0px 0px 0px 0px;
     font-size: 15px;
 
   }
 
-    header{ 
+  header {
     flex-direction: column;
-  
-    }
-  .container{
-    width: 300px; ;
+
+  }
+
+  .container {
+    width: 300px;
+    ;
     height: 300px;
   }
 
-.mopcionesg{
-  flex-direction: column;
+  .mopcionesg {
+    flex-direction: column;
 
-}
+  }
 
-.ccater{
-  grid-template-columns: auto; 
- 
+  .ccater {
+    grid-template-columns: auto;
+
     margin: 0px 0px 0px 0px;
     padding: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    color:white;
-    background-color: rgba(0, 0, 0, 0.767); 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.767);
     position: cover;
+  }
+
+  .nnosotrasm {
+    grid-template-columns: auto;
+  }
+
+  .nnosotr {
+    grid-template-columns: auto;
+  }
+
+  .nhistoria {
+    display: none;
+
+  }
 }
-
-.nnosotrasm{
-  grid-template-columns: auto; 
-}
-
-.nnosotr{
-  grid-template-columns: auto; 
-}
-
-.nhistoria{
-  display: none;
-  
- }
- }
-
- 
-
