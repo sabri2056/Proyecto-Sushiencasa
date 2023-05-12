@@ -1,0 +1,61 @@
+// variables
+
+$color-principal: crimson;
+
+$colores: (
+  negro: black,
+  blanco: white,
+
+);
+
+
+h1 {
+  display: flex;
+  color: $color-principal;
+  inline-size: auto;
+  flex-direction: row;
+  margin: 0px 0px 50px 400px;
+}
+
+h2 {
+  display: flex;
+  color: $color-principal;
+  inline-size: auto;
+  flex-direction: row;
+}
+
+h3 {
+  display: flex;
+  color: $color-principal;
+  /* inline-size: auto; */
+  flex-direction: row;
+}
+
+a {
+  display: flex;
+  color: $color-principal;
+}
+
+// extend
+.cbotton {
+
+  height: 50px;
+  width: 300px;
+  font-weight: 700;
+  background-color: rgb(189, 179, 179);
+  text-align: center;
+  border-radius: 150px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+// mixin
+@mixin center-grid {
+  display: grid;
+  grid-column: auto;
+
+
+}

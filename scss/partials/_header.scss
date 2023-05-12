@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    background-color: black;
+    bottom: auto;
+
+    img {
+        height: 130px;
+        border-radius: 25px;
+    }
+
+    nav {
+        ul {
+            gap: 20px;
+            display: flex;
+            font-size: 25px;
+            margin: 30px 100px 80px 350px;
+            list-style: none;
+            justify-content: cover;
+            position: right;
+
+            a {
+                text-decoration: none;
+                color: crimson;
+
+                &:hover {
+                    font-size: 30px;
+                }
+
+            }
+
+        }
+
+
+    }
+}

@@ -1,0 +1,66 @@
+.nnosotr {
+  display: grid;
+  grid-template-rows: (1, 100px);
+  grid-template-columns: repeat(3, 350px);
+  margin: 10px 10px 10px 50px;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.767);
+
+  border-radius: 25px;
+
+  .nconcepto {
+    @include center-grid;
+
+    margin: 0px 0px 0px 0px;
+    padding: 15px;
+
+  }
+
+  .nmision {
+    @include center-grid;
+
+    margin: 0px 0px 0px 10px;
+    padding: 15px;
+    // text-align: justify;
+  }
+
+  .nproducto {
+    @include center-grid;
+    margin: 0px px 0px 0px;
+    padding: 15px;
+    // text-align: justify;
+  }
+
+}
+
+
+.nhistoria {
+  display: grid;
+  width: 1000px;
+  height: 800px;
+  margin: 20px 30px 80px 80px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  ;
+  color: black;
+  justify-items: center;
+  align-items: center;
+  border-radius: 25px;
+
+
+  .card-img-overlay {
+    display: grid;
+    background-image: url("../IMG/artesana.jpg");
+
+  }
+
+  .card-text {
+    display: grid;
+
+
+
+  }
+
+}

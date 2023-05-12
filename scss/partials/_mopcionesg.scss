@@ -1,0 +1,27 @@
+.mopcionesg {
+  height: 250px;
+  display: flex;
+  flex-direction: 1 row;
+  align-items: stretch;
+  padding: 150;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.list-group-item {
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0, 60px;
+
+}
+
+.card-img-top {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  text-decoration: none;
+}
