@@ -85,12 +85,13 @@ body {
 }
 
 footer {
-  margin: 0px 50px 0px 0px;
+  margin: 0px 100px 0px 0px;
   color: black;
   font-size: 20px;
   font-weight: bold;
   display: grid;
   width: 100%;
+  height: 12%;
   grid-template-rows: repeat(1, 1fr);
   background-color: rgba(238, 39, 39, 0.993);
   justify-content: center;
@@ -98,9 +99,11 @@ footer {
   bottom: 0;
 }
 footer .pie-medio {
-  display: grid;
-  padding: 20px;
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
+}
+footer .icono {
+  margin: 1px;
 }
 
 .container {
@@ -134,14 +137,11 @@ footer .pie-medio {
 }
 
 .cdelivery {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   margin: 100px 30px 100px 90px;
   border-radius: 35px;
   transition: all 1s;
-}
-.cdelivery img:hover {
-  transform: translatex(-1000px);
 }
 
 .ccater {
@@ -211,23 +211,30 @@ footer .pie-medio {
 
 .nhistoria {
   display: grid;
-  width: 1000px;
-  height: 800px;
   margin: 20px 30px 80px 80px;
   padding: 0px;
   font-size: 20px;
   font-family: "Poppins", sans-serif;
-  color: black;
-  justify-items: center;
   align-items: center;
   border-radius: 25px;
+  text-align: center;
+}
+.nhistoria .nhistoria .card-text {
+  display: grid;
+  width: 1000px;
+  height: 800px;
+  text-align: center;
+  color: rgb(33, 13, 214);
+  font-size: medium;
+  justify-items: center;
 }
 .nhistoria .card-img-overlay {
   display: grid;
-  background-image: url("../IMG/artesana.jpg");
-}
-.nhistoria .card-text {
-  display: grid;
+  position: relative;
+  background-image: url("../IMG/mision.avif");
+  width: 1300px;
+  height: 800px;
+  border-radius: 25px;
 }
 
 .mopcionesg {
@@ -271,20 +278,45 @@ footer .pie-medio {
   }
   main .carousel {
     margin: 50px 0px 0px 0px;
+    height: 100px;
+  }
+  main .carousel .carousel-inner {
+    width: 100%;
+    height: auto;
+  }
+  main .carousel .carousel-item img {
+    height: 250px;
+    max-width: 100%;
+  }
+  main .carousel .carousel-control-prev,
+  main .carousel .carousel-control-next {
+    top: auto;
+    bottom: 10px;
+  }
+  .footer .pie-medio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .container {
     display: grid;
     grid-template-columns: auto;
-    width: 50px;
+    width: 80%;
+    text-align: center;
     height: 100px;
     margin: none;
     margin: 30px 0px 0px 0px;
   }
-  .container .cdelivery {
-    display: grid;
-    grid-template-columns: auto;
-    margin: none;
-    margin: 10px 0px 0px 70px;
+  .container form input,
+  .container form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .container form input[type=cbutton] {
+    display: block;
+    margin: 0 auto;
   }
   .mopcionesg {
     flex-direction: column;
@@ -294,88 +326,99 @@ footer .pie-medio {
     margin: 1px 10px 100px 20px;
   }
   .ccater {
+    display: grid;
     grid-template-columns: auto;
     margin: 0px 0px 0px 0px;
-    padding: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: white;
     background-color: rgba(0, 0, 0, 0.767);
     position: cover;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 70px;
   }
-  .nnosotr {
-    grid-template-columns: auto;
-    margin: 50px 10px 10px 0px;
-    margin: none;
-    height: 20;
-    width: 10;
-    font-size: 15px;
+  .cbotton, .ccater .cbotton {
+    margin-top: 10px;
   }
-  .nnosotr .nconcepto {
-    display: grid;
-    grid-template-columns: auto;
-    margin: none;
-    margin: 10px 0px 0px 70px;
-  }
-  .nnosotr .nmision {
-    display: grid;
-    grid-template-columns: auto;
-    margin: none;
-    margin: 10px 0px 0px 70px;
-  }
-  .nnosotr .nproducto {
-    display: grid;
-    grid-template-columns: auto;
-    margin: none;
-    margin: 10px 0px 0px 70px;
-  }
-  .nhistoria {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 30px 0px 0px 0px;
-    text-align: left;
-    font-size: 10px;
-    flex-direction: left;
-    width: 100px;
-    height: 950px;
-  }
-  .nhistoria .card-img-overlay {
-    display: grid;
-    flex-direction: left;
-    grid-column: start;
-  }
-  .nhistoria .card-title {
-    font-size: 20px;
-    text-align: left;
-    flex-direction: row;
-    width: 350px;
-    height: 50px;
-    margin: 10px 20px 10px 50px;
-  }
-  .nhistoria .card-text {
-    display: grid;
-    grid-column: start;
-    grid-column-start: 1;
-    font-size: 15px;
-    text-align: left;
-    flex-direction: left;
-    width: 320px;
-    height: 450px;
-    margin: 10px 10px 10px 50px;
-  }
-  h1 {
-    font-size: 10px;
-    text-align: left;
-    flex-direction: row;
-    width: 10px;
-    margin: 50px 100px 50px 300px;
-  }
-  h2 {
-    font-size: 15px;
-    display: flex;
-    color: crimson;
-    flex-direction: row;
-  }
+}
+.nnosotr {
+  grid-template-columns: auto;
+  margin: 50px 10px 10px 0px;
+  margin: none;
+  height: 20;
+  width: 10;
+  font-size: 15px;
+}
+.nnosotr .nconcepto {
+  display: grid;
+  grid-template-columns: auto;
+  margin: none;
+  margin: 10px 0px 0px 70px;
+}
+.nnosotr .nmision {
+  display: grid;
+  grid-template-columns: auto;
+  margin: none;
+  margin: 10px 0px 0px 70px;
+}
+.nnosotr .nproducto {
+  display: grid;
+  grid-template-columns: auto;
+  margin: none;
+  margin: 10px 0px 0px 70px;
+}
+.nnosotr .nproducto .card-body {
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.nhistoria {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 30px 0px 0px 0px;
+  text-align: left;
+  font-size: 10px;
+  flex-direction: left;
+  width: 100px;
+  height: 950px;
+}
+.nhistoria .card-img-overlay {
+  display: grid;
+  flex-direction: left;
+  grid-column: start;
+}
+.nhistoria .card-title {
+  font-size: 20px;
+  text-align: left;
+  flex-direction: row;
+  width: 350px;
+  height: 50px;
+  margin: 10px 20px 10px 50px;
+}
+.nhistoria .card-text {
+  display: grid;
+  grid-column: start;
+  grid-column-start: 1;
+  font-size: 15px;
+  text-align: left;
+  flex-direction: left;
+  width: 320px;
+  height: 450px;
+  margin: 10px 10px 10px 50px;
+}
+
+h1 {
+  font-size: 10px;
+  text-align: left;
+  flex-direction: row;
+  width: 10px;
+  margin: 50px 100px 50px 300px;
+}
+
+h2 {
+  font-size: 15px;
+  display: flex;
+  color: crimson;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */
