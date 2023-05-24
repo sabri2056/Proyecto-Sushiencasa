@@ -1,9 +1,23 @@
 main {
 
-  .carousel {
-    margin: 100px 0px 0px 0px;
-    position: static;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
   }
+
+
 
 
 }

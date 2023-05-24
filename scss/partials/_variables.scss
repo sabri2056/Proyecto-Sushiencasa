@@ -37,18 +37,34 @@ a {
 }
 
 // extend
-.cbotton {
-
-  height: 50px;
-  width: 300px;
+%button-style {
+  height: 60px;
+  width: 230px;
   font-weight: 700;
-  background-color: rgb(189, 179, 179);
+  background-color: rgb(206, 18, 18);
   text-align: center;
   border-radius: 150px;
   padding: 10px;
-  color: white;
   cursor: pointer;
   text-decoration: none;
+}
+
+
+.cbotton {
+  @extend %button-style;
+  position: relative;
+}
+
+.cbotton a {
+  position: absolute; 
+  // bottom: 0; /* Ajusta el valor según la posición deseada */
+  left: 50%; /* Ajusta el valor según la posición deseada */
+  transform: translateX(-50%); /* Centra horizontalmente el botón */
+  text-decoration: none;
+  // background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 

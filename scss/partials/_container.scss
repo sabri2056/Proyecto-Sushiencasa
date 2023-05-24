@@ -1,8 +1,10 @@
 .container {
   display: grid;
   grid-template-columns: repeat(2, 600px);
-  background-color: #201f1f;
+  background-color: #d60e0ee0;
   padding: 20px;
+  margin-top: 40px;
+
 
   input[type=submit]:hover {
     background-color: white;
@@ -32,14 +34,7 @@
 
 }
 
-.cdelivery {
-  width: 100px;
-  height: 100px;
-  margin: 100px 30px 100px 90px;
-  border-radius: 35px;
-  transition: all 1s;
 
-  }
 
   
 

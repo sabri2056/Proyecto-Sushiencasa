@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   display: flex;
   color: crimson;
@@ -26,16 +27,29 @@ a {
 }
 
 .cbotton, .ccater .cbotton {
-  height: 50px;
-  width: 300px;
+  height: 60px;
+  width: 230px;
   font-weight: 700;
-  background-color: rgb(189, 179, 179);
+  background-color: rgb(206, 18, 18);
   text-align: center;
   border-radius: 150px;
   padding: 10px;
-  color: white;
   cursor: pointer;
   text-decoration: none;
+}
+
+.cbotton, .ccater .cbotton {
+  position: relative;
+}
+
+.cbotton a, .ccater .cbotton a {
+  position: absolute;
+  left: 50%; /* Ajusta el valor según la posición deseada */
+  transform: translateX(-50%); /* Centra horizontalmente el botón */
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 * {
@@ -47,41 +61,71 @@ a {
 header {
   display: flex;
   background-color: black;
-  bottom: auto;
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
 }
+
 header img {
   height: 130px;
   border-radius: 25px;
+  margin: 0 20px;
 }
+
+header nav {
+  flex-grow: 1;
+}
+
 header nav ul {
-  gap: 20px;
   display: flex;
-  font-size: 25px;
-  margin: 30px 100px 80px 350px;
+  justify-content: flex-end;
+  align-items: center;
   list-style: none;
-  justify-content: cover;
-  position: right;
+  margin: 0;
+  padding: 0;
 }
-header nav ul a {
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
   text-decoration: none;
   color: crimson;
+  font-size: 25px;
 }
-header nav ul a:hover {
+
+header nav ul li a:hover {
   font-size: 30px;
 }
 
-main .carousel {
-  margin: 100px 0px 0px 0px;
-  position: static;
+main {
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+main .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 body {
   font-family: "Caveat", cursive;
   font-family: "Edu NSW ACT Foundation", cursive;
   font-family: "Poppins", sans-serif;
-  background-image: url(../IMG/4.avif);
+  background-color: black;
   background-size: cover;
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
@@ -109,8 +153,9 @@ footer .icono {
 .container {
   display: grid;
   grid-template-columns: repeat(2, 600px);
-  background-color: #201f1f;
+  background-color: rgba(214, 14, 14, 0.8784313725);
   padding: 20px;
+  margin-top: 40px;
 }
 .container input[type=submit]:hover {
   background-color: white;
@@ -136,24 +181,16 @@ footer .icono {
   resize: horizontal;
 }
 
-.cdelivery {
-  width: 100px;
-  height: 100px;
-  margin: 100px 30px 100px 90px;
-  border-radius: 35px;
-  transition: all 1s;
-}
-
 .ccater {
   display: grid;
   grid-template-rows: 1, 100px;
   grid-template-columns: repeat(3, 400px);
   margin: 100px 50px 300px 80px;
-  padding: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: rgba(0, 0, 0, 0.986);
   position: cover;
   border-radius: 25px;
   text-decoration: none;
@@ -175,9 +212,8 @@ footer .icono {
   padding: 15px;
 }
 .ccater .cbotton {
-  background-color: rgb(180, 6, 41);
-  color: white;
-  text-decoration: none;
+  bottom: 0;
+  padding: 0px 0px;
 }
 
 .nnosotr {
@@ -187,8 +223,9 @@ footer .icono {
   margin: 10px 10px 10px 50px;
   padding: 10px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.767);
+  background-color: rgb(0, 0, 0);
   border-radius: 25px;
+  font-size: 24px;
 }
 .nnosotr .nconcepto {
   display: grid;
@@ -213,54 +250,109 @@ footer .icono {
   display: grid;
   margin: 20px 30px 80px 80px;
   padding: 0px;
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
   align-items: center;
   border-radius: 25px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
 }
 .nhistoria .nhistoria .card-text {
+  font-weight: bold;
+  font-size: 30px;
   display: grid;
   width: 1000px;
   height: 800px;
   text-align: center;
-  color: rgb(33, 13, 214);
-  font-size: medium;
   justify-items: center;
+  font-size: 24px;
 }
-.nhistoria .card-img-overlay {
+
+.card-img-overlay {
   display: grid;
   position: relative;
   background-image: url("../IMG/mision.avif");
-  width: 1300px;
+  width: 1350px;
   height: 800px;
   border-radius: 25px;
 }
 
 .mopcionesg {
-  height: 250px;
-  display: flex;
-  flex-direction: 1 row;
-  align-items: stretch;
-  padding: 150;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   justify-content: center;
   text-decoration: none;
+  margin: 20px 50px 50px 80px;
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+
+.mopcionesg > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.mentrada {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.mcombos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.mhotrolls {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.m-viandas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .list-group-item {
   text-decoration: none;
   list-style-type: none;
   justify-content: center;
-  padding: 0, 60px;
+  text-align: left;
+  padding: 10px;
+  color: white;
 }
 
 .card-img-top {
   display: flex;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 25px;
   text-decoration: none;
+}
+
+.cbotton, .ccater .cbotton {
+  position: relative;
+  bottom: 0;
+}
+
+.cbotton, .ccater .cbotton {
+  bottom: 0;
 }
 
 @media screen and (max-width: 425px) {
@@ -271,13 +363,13 @@ footer .icono {
     text-align: left;
     float: left;
     flex-direction: row;
-    width: 0, 50px;
+    width: 0, 30px;
     margin: none;
     margin: 10px 0px 0px 0px;
     font-size: 17px;
   }
   main .carousel {
-    margin: 50px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     height: 100px;
   }
   main .carousel .carousel-inner {
@@ -301,10 +393,6 @@ footer .icono {
   .container {
     display: grid;
     grid-template-columns: auto;
-    width: 80%;
-    text-align: center;
-    height: 100px;
-    margin: none;
     margin: 30px 0px 0px 0px;
   }
   .container form input,
@@ -319,11 +407,31 @@ footer .icono {
     margin: 0 auto;
   }
   .mopcionesg {
+    display: flex;
     flex-direction: column;
-    margin: none;
+    align-items: center;
+    margin: 20px;
+  }
+  .mopcionesg > div {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .mentrada,
+  .mcombos,
+  .mhotrolls,
+  .m-viandas {
+    align-items: center;
+  }
+  .card-img-top {
+    width: 100%;
     height: auto;
-    font-size: 15px;
-    margin: 1px 10px 100px 20px;
+  }
+  .list-group-item {
+    text-align: center;
+  }
+  .cbotton, .ccater .cbotton {
+    margin-top: 20px;
+    text-align: center;
   }
   .ccater {
     display: grid;
@@ -342,9 +450,7 @@ footer .icono {
 }
 .nnosotr {
   grid-template-columns: auto;
-  margin: 50px 10px 10px 0px;
-  margin: none;
-  height: 20;
+  margin: 20px 10px 10px 0px;
   width: 10;
   font-size: 15px;
 }
@@ -377,9 +483,6 @@ footer .icono {
   margin: 30px 0px 0px 0px;
   text-align: left;
   font-size: 10px;
-  flex-direction: left;
-  width: 100px;
-  height: 950px;
 }
 .nhistoria .card-img-overlay {
   display: grid;

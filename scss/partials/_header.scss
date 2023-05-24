@@ -1,36 +1,40 @@
 header {
     display: flex;
     background-color: black;
-    bottom: auto;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
 
-    img {
-        height: 130px;
-        border-radius: 25px;
-    }
+header img {
+    height: 130px;
+    border-radius: 25px;
+    margin: 0 20px;
+}
 
-    nav {
-        ul {
-            gap: 20px;
-            display: flex;
-            font-size: 25px;
-            margin: 30px 100px 80px 350px;
-            list-style: none;
-            justify-content: cover;
-            position: right;
-           
+header nav {
+    flex-grow: 1;
+}
 
-            a {
-                text-decoration: none;
-                color: crimson;
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-                &:hover {
-                    font-size: 30px;
-                }
+header nav ul li {
+    margin-right: 20px;
+}
 
-            }
+header nav ul li a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 25px;
+}
 
-        }
-
-
-    }
+header nav ul li a:hover {
+    font-size: 30px;
 }

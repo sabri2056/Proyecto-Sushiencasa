@@ -3,11 +3,11 @@
     grid-template-rows: (1, 100px);
     grid-template-columns: repeat(3, 400px);
     margin: 100px 50px 300px 80px;
-    padding: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.767);
+    background-color: rgba(0, 0, 0, 0.986);
     position: cover;
     border-radius: 25px;
     text-decoration: none;
@@ -33,9 +33,9 @@
 
     .cbotton {
         @extend .cbotton;
-        background-color: rgb(180, 6, 41);
-        color: white;
-        text-decoration: none;
+        bottom: 0;
+        padding: 0px 0px;
+       
     }
 
 }

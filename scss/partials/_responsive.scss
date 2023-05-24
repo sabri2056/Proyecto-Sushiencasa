@@ -1,6 +1,5 @@
 @media screen and (max-width: 425px) {
 
-
   header {
     flex-direction: column;
 
@@ -8,7 +7,7 @@
       text-align: left;
       float: left;
       flex-direction: row;
-      width: 0, 50px;
+      width: 0,30px;
       margin: none;
       margin: 10px 0px 0px 0px;
       font-size: 17px;
@@ -20,81 +19,99 @@
   main {
 
     .carousel {
-      margin: 50px 0px 0px 0px;
-      height: 100px;
+    margin: 10px 0px 0px 0px;
+    height: 100px;
 
-      .carousel-inner {
-        width: 100%;
-        height: auto;
+   .carousel-inner {
+    width: 100%;
+    height: auto;
       }
 
-      .carousel-item img {
-        height: 250px;
-        max-width: 100%;
+    .carousel-item img {
+    height: 250px;
+    max-width: 100%;
       }
 
-      .carousel-control-prev,
-      .carousel-control-next {
-        top: auto;
-        bottom: 10px;
+    .carousel-control-prev,
+    .carousel-control-next {
+    top: auto;
+    bottom: 10px;
       }
-
-
-
-
     }
 
 
   }
 
   .footer {
-
     .pie-medio {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
+      // position: static;
     }
 
   }
-
 
 
   .container {
 
-    display: grid;
-    grid-template-columns: auto;
-    width: 80%;
-    text-align: center;
-    height: 100px;
-    margin: none;
-    margin: 30px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: auto;
+  // width: 80%;
+  // text-align: center;
+  // height: 100px;
+  // margin: none;
+  margin: 30px 0px 0px 0px;
 
-    form input,
-    form textarea {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      box-sizing: border-box;
+  form input,
+  form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
     }
 
-    form input[type="cbutton"] {
-      display: block;
-      margin: 0 auto;
+  form input[type="cbutton"] {
+    display: block;
+    margin: 0 auto;
     }
-
-    
 
   }
 
   .mopcionesg {
+    display: flex;
     flex-direction: column;
-    margin: none;
-    height: auto;
-    font-size: 15px;
-    margin: 1px 10px 100px 20px;
-
+    // margin: none;
+    // height: auto;
+    align-items: center;
+    margin: 20px;
   }
+  
+  .mopcionesg>div {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .mentrada,
+  .mcombos,
+  .mhotrolls,
+  .m-viandas {
+    align-items: center;
+  }
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .list-group-item {
+    text-align: center;
+  }
+  
+  .cbotton {
+    margin-top: 20px;
+    text-align: center;
+  }
+
 
   .ccater {
     display: grid;
@@ -112,13 +129,12 @@
     margin-top: 10px;
   }
   }
-
   
   .nnosotr {
     grid-template-columns: auto;
-    margin: 50px 10px 10px 0px;
-    margin: none;
-    height: 20;
+    margin: 20px 10px 10px 0px;
+    // margin: none;
+    // height: 20px;
     width: 10;
     font-size: 15px;
 
@@ -153,18 +169,15 @@
 
   }
 
-
-
   .nhistoria {
     display: grid;
     grid-template-columns: auto;
     margin: 30px 0px 0px 0px;
     text-align: left;
     font-size: 10px;
-    flex-direction: left;
-    width: 100px;
-    ;
-    height: 950px;
+    // flex-direction: left;
+    // width: 100px;
+    // height: 950px;
 
 
     .card-img-overlay {
@@ -215,4 +228,3 @@
     // inline-size: auto;
     flex-direction: row;
   }
-  
