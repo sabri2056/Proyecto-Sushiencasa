@@ -7,7 +7,7 @@
   color: white;
   background-color: rgb(0, 0, 0);
   border-radius: 25px;
-  font-size: 24px;
+  font-size: inherit;
 
   .nconcepto {
     @include center-grid;
@@ -49,8 +49,8 @@
     font-weight: bold;
     font-size: 30px;
     display: grid;
-    width: 1000px;
-    height: 800px;
+    width: 100%;
+    height: auto;
     text-align: center;
     justify-items: center;
     font-size: 24px;
@@ -62,8 +62,8 @@
     display: grid;
     position: relative;
     background-image: url("../IMG/mision.avif");
-    width: 1350px;
-    height: 800px;
+    width: auto;
+    height: auto;
     border-radius: 25px;
 
   }

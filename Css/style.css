@@ -4,7 +4,7 @@ h1 {
   color: crimson;
   inline-size: auto;
   flex-direction: row;
-  margin: 0px 0px 50px 400px;
+  margin: 0px 0px 50px 100px;
 }
 
 h2 {
@@ -64,12 +64,14 @@ header {
   padding: 20px 0;
   position: relative;
   z-index: 1;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 header img {
   height: 130px;
   border-radius: 25px;
-  margin: 0 20px;
+  margin: 20px 0;
 }
 
 header nav {
@@ -117,12 +119,16 @@ main .carousel-container {
   z-index: -1;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
   font-family: "Caveat", cursive;
   font-family: "Edu NSW ACT Foundation", cursive;
   font-family: "Poppins", sans-serif;
   background-color: black;
-  background-size: cover;
   color: white;
   margin: 0;
   padding: 0;
@@ -142,6 +148,9 @@ footer {
   position: fixed;
   bottom: 0;
 }
+footer footer p {
+  font-size: 20px;
+}
 footer .pie-medio {
   display: flex;
   justify-content: center;
@@ -151,6 +160,7 @@ footer .icono {
 }
 
 .container {
+  max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(2, 600px);
   background-color: rgba(214, 14, 14, 0.8784313725);
@@ -225,7 +235,7 @@ footer .icono {
   color: white;
   background-color: rgb(0, 0, 0);
   border-radius: 25px;
-  font-size: 24px;
+  font-size: inherit;
 }
 .nnosotr .nconcepto {
   display: grid;
@@ -260,8 +270,8 @@ footer .icono {
   font-weight: bold;
   font-size: 30px;
   display: grid;
-  width: 1000px;
-  height: 800px;
+  width: 100%;
+  height: auto;
   text-align: center;
   justify-items: center;
   font-size: 24px;
@@ -271,8 +281,8 @@ footer .icono {
   display: grid;
   position: relative;
   background-image: url("../IMG/mision.avif");
-  width: 1350px;
-  height: 800px;
+  width: auto;
+  height: auto;
   border-radius: 25px;
 }
 
@@ -360,21 +370,29 @@ footer .icono {
     flex-direction: column;
   }
   header nav ul {
+    display: flex;
     text-align: left;
-    float: left;
     flex-direction: row;
+    margin: 10px 0px 0px 0px;
+    font-size: 10px;
     width: 0, 30px;
     margin: none;
     margin: 10px 0px 0px 0px;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: crimson;
     font-size: 17px;
   }
   main .carousel {
+    margin-top: 0;
     margin: 10px 0px 0px 0px;
-    height: 100px;
+    height: 450px;
   }
   main .carousel .carousel-inner {
     width: 100%;
     height: auto;
+    margin-top: 0;
   }
   main .carousel .carousel-item img {
     height: 250px;
@@ -382,13 +400,14 @@ footer .icono {
   }
   main .carousel .carousel-control-prev,
   main .carousel .carousel-control-next {
-    top: auto;
     bottom: 10px;
   }
   .footer .pie-medio {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    position: static;
   }
   .container {
     display: grid;
@@ -446,6 +465,10 @@ footer .icono {
   }
   .cbotton, .ccater .cbotton {
     margin-top: 10px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 .nnosotr {

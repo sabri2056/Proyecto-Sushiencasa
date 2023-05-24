@@ -2,29 +2,42 @@
 
   header {
     flex-direction: column;
+     }
 
-    nav ul {
+    header nav ul {
+      display: flex;
       text-align: left;
-      float: left;
+      // float: left;
       flex-direction: row;
+      // max-width: 100%;
+      margin: 10px 0px 0px 0px;
+      font-size: 10px;
       width: 0,30px;
       margin: none;
       margin: 10px 0px 0px 0px;
-      font-size: 17px;
+      
 
     }
 
-  }
+    header nav ul li a {
+      text-decoration: none;
+      color: crimson;
+      font-size: 17px;
+
+ }
 
   main {
 
     .carousel {
+    margin-top: 0;
     margin: 10px 0px 0px 0px;
-    height: 100px;
+    height: 450px;
+
 
    .carousel-inner {
     width: 100%;
     height: auto;
+    margin-top: 0;
       }
 
     .carousel-item img {
@@ -34,7 +47,6 @@
 
     .carousel-control-prev,
     .carousel-control-next {
-    top: auto;
     bottom: 10px;
       }
     }
@@ -42,15 +54,19 @@
 
   }
 
+
   .footer {
+
     .pie-medio {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
-      // position: static;
+      align-items: center;
+      position: static;
     }
 
   }
+   
 
 
   .container {
@@ -127,6 +143,10 @@
 
   .cbotton {
     margin-top: 10px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
   }
   

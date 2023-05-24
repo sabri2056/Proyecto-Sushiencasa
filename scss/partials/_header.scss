@@ -4,12 +4,14 @@ header {
     padding: 20px 0;
     position: relative;
     z-index: 1;
+    margin-left: 0;
+  margin-right: 0;
 }
 
 header img {
     height: 130px;
     border-radius: 25px;
-    margin: 0 20px;
+    margin: 20px 0;
 }
 
 header nav {
