@@ -1,86 +1,47 @@
-.mopcionesg {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+#mopcionesg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 20px 50px 50px 80px;
   margin-top: 40px;
   margin-bottom: 120px;
 }
 
-
-.mopcionesg>div {
+#mopcionesg > div {
+  flex-basis: 48%;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-
-.mentrada {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.mcombos {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-.mhotrolls {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.m-viandas {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  justify-content: flex-start;
-  align-items: flex-end;
-
-
-
+  margin-bottom: 20px;
 }
 
 .list-group-item {
   text-decoration: none;
   list-style-type: none;
-  justify-content: center;
-  text-align: left;
+  text-align: center;
   padding: 10px;
-  color:white;
-
+  color: white;
 }
 
 .card-img-top {
   display: flex;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 25px;
   text-decoration: none;
 }
 
-
 .cbotton {
   position: relative;
   bottom: 0;
+  margin-top: 10px;
 }
 
-.cbotton {
-  @extend .cbotton;
-  bottom: 0;
-
-}
+  .carrito {
+    width: 55px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #f2c94c; 
+    border-radius: 8px;
+    color: red;
+  }

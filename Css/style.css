@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 h1 {
   display: flex;
   color: crimson;
@@ -26,7 +27,8 @@ a {
   color: crimson;
 }
 
-.cbotton, .ccater .cbotton {
+.cbotton,
+.ccater .cbotton {
   height: 60px;
   width: 230px;
   font-weight: 700;
@@ -38,11 +40,13 @@ a {
   text-decoration: none;
 }
 
-.cbotton, .ccater .cbotton {
+.cbotton,
+.ccater .cbotton {
   position: relative;
 }
 
-.cbotton a, .ccater .cbotton a {
+.cbotton a,
+.ccater .cbotton a {
   position: absolute;
   left: 50%; /* Ajusta el valor según la posición deseada */
   transform: translateX(-50%); /* Centra horizontalmente el botón */
@@ -106,6 +110,7 @@ main {
   position: relative;
   z-index: 0;
 }
+
 main .carousel-container {
   display: flex;
   justify-content: center;
@@ -124,7 +129,8 @@ main .carousel-container {
   padding: 0;
   box-sizing: border-box;
 }
-* body {
+
+body {
   font-family: "Caveat", cursive;
   font-family: "Edu NSW ACT Foundation", cursive;
   font-family: "Poppins", sans-serif;
@@ -148,13 +154,16 @@ footer {
   position: fixed;
   bottom: 0;
 }
+
 footer footer p {
   font-size: 20px;
 }
+
 footer .pie-medio {
   display: flex;
   justify-content: center;
 }
+
 footer .icono {
   margin: 1px;
 }
@@ -162,14 +171,16 @@ footer .icono {
 .container {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(2, 600px);
+  grid-template-columns: repeat(2, 1fr);
   background-color: rgba(214, 14, 14, 0.8784313725);
   padding: 20px;
   margin-top: 40px;
 }
+
 .container input[type=submit]:hover {
   background-color: white;
 }
+
 .container input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -178,6 +189,7 @@ footer .icono {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .container input[type=text],
 .container select,
 .container textarea {
@@ -194,7 +206,7 @@ footer .icono {
 .ccater {
   display: grid;
   grid-template-rows: 1, 100px;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(2, 400px);
   margin: 100px 50px 300px 80px;
   padding: 10px;
   padding-left: 10px;
@@ -205,22 +217,26 @@ footer .icono {
   border-radius: 25px;
   text-decoration: none;
 }
+
 .ccater .cobjetivo {
   display: grid;
   margin: 50px 50px px 80px;
   padding: 15px;
   text-decoration: none;
 }
+
 .ccater .cpropuesta {
   display: grid;
   margin: 50px 50px px 80px;
   padding: 15px;
 }
+
 .ccater .cexperiencia {
   display: grid;
   margin: 50px 50px px 80px;
   padding: 15px;
 }
+
 .ccater .cbotton {
   bottom: 0;
   padding: 0px 0px;
@@ -229,7 +245,7 @@ footer .icono {
 .nnosotr {
   display: grid;
   grid-template-rows: 1, 100px;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(2, 350px);
   margin: 10px 10px 10px 50px;
   padding: 10px;
   color: white;
@@ -237,18 +253,21 @@ footer .icono {
   border-radius: 25px;
   font-size: inherit;
 }
+
 .nnosotr .nconcepto {
   display: grid;
   grid-column: auto;
   margin: 0px 0px 0px 0px;
   padding: 15px;
 }
+
 .nnosotr .nmision {
   display: grid;
   grid-column: auto;
   margin: 0px 0px 0px 10px;
   padding: 15px;
 }
+
 .nnosotr .nproducto {
   display: grid;
   grid-column: auto;
@@ -266,6 +285,7 @@ footer .icono {
   font-family: "Poppins", sans-serif;
   color: #000000;
 }
+
 .nhistoria .nhistoria .card-text {
   font-weight: bold;
   font-size: 30px;
@@ -356,12 +376,9 @@ footer .icono {
   text-decoration: none;
 }
 
-.cbotton, .ccater .cbotton {
+.cbotton,
+.ccater .cbotton {
   position: relative;
-  bottom: 0;
-}
-
-.cbotton, .ccater .cbotton {
   bottom: 0;
 }
 
@@ -369,6 +386,7 @@ footer .icono {
   header {
     flex-direction: column;
   }
+
   header nav ul {
     display: flex;
     text-align: left;
@@ -379,29 +397,35 @@ footer .icono {
     margin: none;
     margin: 10px 0px 0px 0px;
   }
+
   header nav ul li a {
     text-decoration: none;
     color: crimson;
     font-size: 15px;
   }
+
   main .carousel {
     margin-top: 0;
     margin: 10px 0px 0px 0px;
     height: 450px;
   }
+
   main .carousel .carousel-inner {
     width: 100%;
     height: auto;
     margin-top: 0;
   }
+
   main .carousel .carousel-item img {
     height: 250px;
     max-width: 100%;
   }
+
   main .carousel .carousel-control-prev,
   main .carousel .carousel-control-next {
     bottom: 10px;
   }
+
   .footer .pie-medio {
     display: flex;
     flex-direction: row;
@@ -409,11 +433,13 @@ footer .icono {
     align-items: center;
     position: static;
   }
+
   .container {
     display: grid;
     grid-template-columns: auto;
     margin: 30px 0px 0px 0px;
   }
+
   .container form input,
   .container form textarea {
     width: 100%;
@@ -421,37 +447,47 @@ footer .icono {
     margin-bottom: 10px;
     box-sizing: border-box;
   }
+
   .container form input[type=cbutton] {
     display: block;
     margin: 0 auto;
   }
+
   .mopcionesg {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
     align-items: center;
     margin: 20px;
   }
+
   .mopcionesg > div {
     margin-top: 50px;
     margin-bottom: 40px;
   }
+
   .mentrada,
   .mcombos,
   .mhotrolls,
   .m-viandas {
     align-items: center;
   }
+
   .card-img-top {
     width: 100%;
     height: auto;
   }
+
   .list-group-item {
     text-align: center;
   }
-  .cbotton, .ccater .cbotton {
+
+  .cbotton,
+  .ccater .cbotton {
     margin-top: 20px;
     text-align: center;
   }
+
   .ccater {
     display: grid;
     grid-template-columns: auto;
@@ -463,88 +499,42 @@ footer .icono {
     padding: 20px;
     margin-bottom: 70px;
   }
-  .cbotton, .ccater .cbotton {
+
+  .cbotton,
+  .ccater .cbotton {
     margin-top: 10px;
   }
+
   img {
     max-width: 100%;
     height: auto;
   }
 }
+
 .nnosotr {
-  grid-template-columns: auto;
+  grid-template-columns: repeat(2, 1fr);
   margin: 20px 10px 10px 0px;
   width: 10;
   font-size: 15px;
 }
+
 .nnosotr .nconcepto {
   display: grid;
-  grid-template-columns: auto;
-  margin: none;
-  margin: 10px 0px 0px 70px;
+  grid-column: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 15px;
 }
+
 .nnosotr .nmision {
   display: grid;
-  grid-template-columns: auto;
-  margin: none;
-  margin: 10px 0px 0px 70px;
+  grid-column: auto;
+  margin: 0px 0px 0px 10px;
+  padding: 15px;
 }
+
 .nnosotr .nproducto {
   display: grid;
-  grid-template-columns: auto;
-  margin: none;
-  margin: 10px 0px 0px 70px;
+  grid-column: auto;
+  margin: 0px px 0px 0px;
+  padding: 15px;
 }
-.nnosotr .nproducto .card-body {
-  max-width: 100%;
-  padding: 0 10px;
-}
-
-.nhistoria {
-  display: grid;
-  grid-template-columns: auto;
-  margin: 30px 0px 0px 0px;
-  text-align: left;
-  font-size: 10px;
-}
-.nhistoria .card-img-overlay {
-  display: grid;
-  flex-direction: left;
-  grid-column: start;
-}
-.nhistoria .card-title {
-  font-size: 20px;
-  text-align: left;
-  flex-direction: row;
-  width: 350px;
-  height: 50px;
-  margin: 10px 20px 10px 50px;
-}
-.nhistoria .card-text {
-  display: grid;
-  grid-column: start;
-  grid-column-start: 1;
-  font-size: 15px;
-  text-align: left;
-  flex-direction: left;
-  width: 320px;
-  height: 450px;
-  margin: 10px 10px 10px 50px;
-}
-
-h1 {
-  font-size: 10px;
-  text-align: left;
-  flex-direction: row;
-  width: 10px;
-  margin: 50px 100px 50px 300px;
-}
-
-h2 {
-  font-size: 15px;
-  display: flex;
-  color: crimson;
-  flex-direction: row;
-}
-
-/*# sourceMappingURL=style.css.map */

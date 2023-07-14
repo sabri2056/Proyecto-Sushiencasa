@@ -46,24 +46,29 @@
         <li><a href="Contacto.html">Contacto</a></li>
         <li><a href="Menu.html">Menu</a></li>
         <li><a href="Catering.html">Catering</a></li>
-        <li><a href="Nosotras.html">Nosotras</a></li>
+        
       </ul>
     </nav>
   </header>
   <main>
     <img src="../IMG/contactanos.JPG" alt="img contacto" height="100px" width="100%">
     <div class="container">
-      <form action="https://formsubmit.co/rominasoledadmotta@gmail.com" method="POST">
+      <form action="contacto">
+    
         <label for="fname"> Ingresa Nombre</label>
         <input type="text" id="fname" name="nombre" placeholder="">
+    
         <label for="lname">Ingresa Apellido</label>
         <input type="text" id="lname" name="apellido" placeholder="">
+    
         <label for="subject">Mensaje</label>
-        <textarea id="subject" name="Mensaje" placeholder="Escribe Aqui tu mensaje" ></textarea>
+        <textarea id="subject" name="Mensaje" placeholder="Escribe Aqui tu mensaje" style="height:200px"></textarea>
         <label for="enviar"></label>
-        <input type="cbutton" value="Enviar" name="Enviar">
+        <input type="button" value="Enviar">
+    
       </form>
     </div>
+    <div id="product-container" class="contenedor"></div>
     <footer>
       <div class="pie-medio">
         <a href="https://www.facebook.com/SushiENcasaSanLorenzo" target="_blank">
@@ -86,7 +91,6 @@
     <script>
       AOS.init();
     </script>
-    <script src="../js/app.js"></script>
 </body>
 
 </html>
