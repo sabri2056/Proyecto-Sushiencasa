@@ -1,72 +1,7 @@
-<<<<<<< HEAD
 /* index Encabezado */
 
 body {
   background-color: black;
-=======
-@charset "UTF-8";
-
-h1 {
-  display: flex;
-  color: crimson;
-  inline-size: auto;
-  flex-direction: row;
-  margin: 0px 0px 50px 100px;
-}
-
-h2 {
-  display: flex;
-  color: crimson;
-  inline-size: auto;
-  flex-direction: row;
-}
-
-h3 {
-  display: flex;
-  color: crimson;
-  /* inline-size: auto; */
-  flex-direction: row;
-}
-
-a {
-  display: flex;
-  color: crimson;
-}
-
-.cbotton,
-.ccater .cbotton {
-  height: 60px;
-  width: 230px;
-  font-weight: 700;
-  background-color: rgb(206, 18, 18);
-  text-align: center;
-  border-radius: 150px;
-  padding: 10px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.cbotton,
-.ccater .cbotton {
-  position: relative;
-}
-
-.cbotton a,
-.ccater .cbotton a {
-  position: absolute;
-  left: 50%; /* Ajusta el valor según la posición deseada */
-  transform: translateX(-50%); /* Centra horizontalmente el botón */
-  text-decoration: none;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
->>>>>>> 660ffce3fa5db0efea2174802fee95b4079f8d61
 }
 
 header {
@@ -112,20 +47,10 @@ header nav ul li a:hover {
   font-size: 30px;
 }
 
-<<<<<<< HEAD
 /* carruel */
 
 .carousel-container {
   width: 100%;
-=======
-main {
-  height: 100vh;
-  position: relative;
-  z-index: 0;
-}
-
-main .carousel-container {
->>>>>>> 660ffce3fa5db0efea2174802fee95b4079f8d61
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,32 +59,7 @@ main .carousel-container {
 .carousel-item img {
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
   object-fit: cover;
-=======
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Caveat", cursive;
-  font-family: "Edu NSW ACT Foundation", cursive;
-  font-family: "Poppins", sans-serif;
-  background-color: black;
-  color: white;
-  margin: 0;
-  padding: 0;
->>>>>>> 660ffce3fa5db0efea2174802fee95b4079f8d61
 }
 
 /* footer */
@@ -175,24 +75,12 @@ footer {
   justify-content: center;
 }
 
-<<<<<<< HEAD
 .pie-medio {
-=======
-footer footer p {
-  font-size: 20px;
-}
-
-footer .pie-medio {
->>>>>>> 660ffce3fa5db0efea2174802fee95b4079f8d61
   display: flex;
   justify-content: center;
 }
 
-<<<<<<< HEAD
 .icono {
-=======
-footer .icono {
->>>>>>> 660ffce3fa5db0efea2174802fee95b4079f8d61
   margin: 1px;
 }
 
@@ -204,7 +92,6 @@ main {
 /* Area menu */
 #mopcionesg {
   display: grid;
-<<<<<<< HEAD
   
   gap: 20px;
   justify-items: center;
@@ -223,15 +110,6 @@ main {
 }
 
 .card {
-=======
-  grid-template-columns: repeat(2, 1fr);
-  background-color: rgba(214, 14, 14, 0.8784313725);
-  padding: 20px;
-  margin-top: 40px;
-}
-
-.container input[type=submit]:hover {
->>>>>>> 660ffce3fa5db0efea2174802fee95b4079f8d61
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -239,7 +117,6 @@ main {
   width: 100%; /* Ajustar al ancho de la columna */
 }
 
-<<<<<<< HEAD
 .producto.product-card img {
   max-width: 100%;
   max-height: 200px; /* Puedes ajustar este valor según tus necesidades */
@@ -258,10 +135,6 @@ main {
 
 .agregar-carrito {
   background-color: crimson;
-=======
-.container input[type=submit] {
-  background-color: #04AA6D;
->>>>>>> 660ffce3fa5db0efea2174802fee95b4079f8d61
   color: white;
   padding: 5px 10px;
   border: none;
@@ -269,7 +142,6 @@ main {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .agregar-carrito:hover {
   background-color: darkred;
 }
@@ -280,353 +152,3 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-=======
-.container input[type=text],
-.container select,
-.container textarea {
-  width: 100%;
-  padding: 0px;
-  border: 1px solid #ccc;
-  border-radius: 0px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 10px;
-  resize: horizontal;
-}
-
-.ccater {
-  display: grid;
-  grid-template-rows: 1, 100px;
-  grid-template-columns: repeat(2, 400px);
-  margin: 100px 50px 300px 80px;
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.986);
-  position: cover;
-  border-radius: 25px;
-  text-decoration: none;
-}
-
-.ccater .cobjetivo {
-  display: grid;
-  margin: 50px 50px px 80px;
-  padding: 15px;
-  text-decoration: none;
-}
-
-.ccater .cpropuesta {
-  display: grid;
-  margin: 50px 50px px 80px;
-  padding: 15px;
-}
-
-.ccater .cexperiencia {
-  display: grid;
-  margin: 50px 50px px 80px;
-  padding: 15px;
-}
-
-.ccater .cbotton {
-  bottom: 0;
-  padding: 0px 0px;
-}
-
-.nnosotr {
-  display: grid;
-  grid-template-rows: 1, 100px;
-  grid-template-columns: repeat(2, 350px);
-  margin: 10px 10px 10px 50px;
-  padding: 10px;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  border-radius: 25px;
-  font-size: inherit;
-}
-
-.nnosotr .nconcepto {
-  display: grid;
-  grid-column: auto;
-  margin: 0px 0px 0px 0px;
-  padding: 15px;
-}
-
-.nnosotr .nmision {
-  display: grid;
-  grid-column: auto;
-  margin: 0px 0px 0px 10px;
-  padding: 15px;
-}
-
-.nnosotr .nproducto {
-  display: grid;
-  grid-column: auto;
-  margin: 0px px 0px 0px;
-  padding: 15px;
-}
-
-.nhistoria {
-  display: grid;
-  margin: 20px 30px 80px 80px;
-  padding: 0px;
-  align-items: center;
-  border-radius: 25px;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  color: #000000;
-}
-
-.nhistoria .nhistoria .card-text {
-  font-weight: bold;
-  font-size: 30px;
-  display: grid;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  justify-items: center;
-  font-size: 24px;
-}
-
-.card-img-overlay {
-  display: grid;
-  position: relative;
-  background-image: url("../IMG/mision.avif");
-  width: auto;
-  height: auto;
-  border-radius: 25px;
-}
-
-.mopcionesg {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin: 20px 50px 50px 80px;
-  margin-top: 40px;
-  margin-bottom: 120px;
-}
-
-.mopcionesg > div {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-
-.mentrada {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.mcombos {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-.mhotrolls {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.m-viandas {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 40px;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-.list-group-item {
-  text-decoration: none;
-  list-style-type: none;
-  justify-content: center;
-  text-align: left;
-  padding: 10px;
-  color: white;
-}
-
-.card-img-top {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  border-radius: 25px;
-  text-decoration: none;
-}
-
-.cbotton,
-.ccater .cbotton {
-  position: relative;
-  bottom: 0;
-}
-
-@media screen and (max-width: 425px) {
-  header {
-    flex-direction: column;
-  }
-
-  header nav ul {
-    display: flex;
-    text-align: left;
-    flex-direction: row;
-    margin: 10px 0px 0px 0px;
-    font-size: 10px;
-    width: 0, 30px;
-    margin: none;
-    margin: 10px 0px 0px 0px;
-  }
-
-  header nav ul li a {
-    text-decoration: none;
-    color: crimson;
-    font-size: 15px;
-  }
-
-  main .carousel {
-    margin-top: 0;
-    margin: 10px 0px 0px 0px;
-    height: 450px;
-  }
-
-  main .carousel .carousel-inner {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-  }
-
-  main .carousel .carousel-item img {
-    height: 250px;
-    max-width: 100%;
-  }
-
-  main .carousel .carousel-control-prev,
-  main .carousel .carousel-control-next {
-    bottom: 10px;
-  }
-
-  .footer .pie-medio {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: static;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 30px 0px 0px 0px;
-  }
-
-  .container form input,
-  .container form textarea {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-  }
-
-  .container form input[type=cbutton] {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .mopcionesg {
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-  }
-
-  .mopcionesg > div {
-    margin-top: 50px;
-    margin-bottom: 40px;
-  }
-
-  .mentrada,
-  .mcombos,
-  .mhotrolls,
-  .m-viandas {
-    align-items: center;
-  }
-
-  .card-img-top {
-    width: 100%;
-    height: auto;
-  }
-
-  .list-group-item {
-    text-align: center;
-  }
-
-  .cbotton,
-  .ccater .cbotton {
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .ccater {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 0px 0px 0px 0px;
-    background-color: rgba(0, 0, 0, 0.767);
-    position: cover;
-    gap: 20px;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 70px;
-  }
-
-  .cbotton,
-  .ccater .cbotton {
-    margin-top: 10px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.nnosotr {
-  grid-template-columns: repeat(2, 1fr);
-  margin: 20px 10px 10px 0px;
-  width: 10;
-  font-size: 15px;
-}
-
-.nnosotr .nconcepto {
-  display: grid;
-  grid-column: auto;
-  margin: 0px 0px 0px 0px;
-  padding: 15px;
-}
-
-.nnosotr .nmision {
-  display: grid;
-  grid-column: auto;
-  margin: 0px 0px 0px 10px;
-  padding: 15px;
-}
-
-.nnosotr .nproducto {
-  display: grid;
-  grid-column: auto;
-  margin: 0px px 0px 0px;
-  padding: 15px;
-}
->>>>>>> 660ffce3fa5db0efea2174802fee95b4079f8d61
