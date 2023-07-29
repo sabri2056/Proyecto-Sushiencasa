@@ -1,0 +1,91 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Bolitas de salmón con queso saborizado",
+      "precio": 1500,
+      "cantidad": 100,
+      "imagen": "../IMG/bolitas-de-salmon-y-queso.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Langostinos rebozados",
+      "precio": 600,
+      "cantidad": 100,
+      "imagen": "../IMG/langostinosreb.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Empanada china",
+      "precio": 300,
+      "cantidad": 100,
+      "imagen": "../IMG/entrada.jpg"
+    },
+      {
+        "id": 4,
+        "nombre": "Hot Rolls - New York",
+        "precio": 3500,
+        "cantidad": 10,
+        "imagen": "../IMG/roll_hot.jpg"
+      },
+      {
+        "id": 5,
+        "nombre": "Hot Rolls - Philadelphia",
+        "precio": 2500,
+        "cantidad": 60,
+        "imagen": "../IMG/combo_clasico.jpg"
+      },
+      {
+        "id": 6,
+        "nombre": "Hot Rolls - Shrimp",
+        "precio": 4500,
+        "cantidad": 100,
+        "imagen": "../IMG/Sauteed-Shrimp-8.jpg"
+      },
+      {
+        "id": 7,
+        "nombre": "Hot Rolls - Veggi",
+        "precio": 2500,
+        "cantidad": 50,
+        "imagen": "../IMG/veggi.jpg"
+      },
+      {
+        "id": 8,
+        "nombre": "Hot Rolls - Honey",
+        "precio": 3200,
+        "cantidad": 80,
+        "imagen": "../IMG/honey.jpg"
+      },
+      {
+        "id": 9,
+        "nombre": "Viandas - Personalizada",
+        "precio": 1500,
+        "cantidad": 75,
+        "imagen": "../IMG/vianda_personalizada.jpg"
+      },
+      {
+        "id": 10,
+        "nombre": "Viandas - Ejecutivo",
+        "precio": 1500,
+        "cantidad": 5,
+        "imagen": "../IMG/vianda_ejecutivo.jpg"
+      },
+      {
+        "id": 11,
+        "nombre": "Viandas - Tradicional",
+        "precio": 1500,
+        "cantidad": 35,
+        "imagen": "../IMG/vianda_tradicion1.jpg"
+      },
+      {
+        "id": 12,
+        "nombre": "Viandas - Opcion del dia",
+        "precio": 1500,
+        "cantidad": 100,
+        "imagen": "../IMG/vianda_tradicionaljpg.jpg"
+      }
+  ]
+    }
+    
+  
+  
